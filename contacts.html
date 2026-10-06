@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Контакты — Игорь Лики</title>
+
+<style>
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background: #070707;
+    color: #f4f0e8;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.wrap {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 60px 25px;
+}
+
+.logo {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.logo-title {
+    font-size: 28px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+
+.logo-subtitle {
+    margin-top: 10px;
+    color: #aaa;
+    font-size: 13px;
+    letter-spacing: 2px;
+}
+
+h1 {
+    text-align: center;
+    font-size: 46px;
+    font-weight: 400;
+    margin: 0 0 15px;
+}
+
+.intro {
+    text-align: center;
+    color: #999;
+    font-size: 16px;
+    margin-bottom: 45px;
+}
+
+.contacts {
+    border: 1px solid #29251d;
+    background: linear-gradient(145deg, #15130f, #0b0b09);
+}
+
+.contact-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    padding: 25px;
+    border-bottom: 1px solid #29251d;
+}
+
+.contact-row:last-child {
+    border-bottom: none;
+}
+
+.label {
+    color: #999;
+    font-size: 14px;
+}
+
+.contact-row a {
+    color: #d6b36a;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.contact-row a:hover {
+    text-decoration: underline;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+    margin-top: 35px;
+}
+
+.button {
+    display: inline-block;
+    padding: 16px 25px;
+    border: 1px solid #d6b36a;
+    color: #d6b36a;
+    text-decoration: none;
+    font-size: 14px;
+    letter-spacing: 1px;
+    transition: 0.2s;
+}
+
+.button:hover {
+    background: #d6b36a;
+    color: #080808;
+}
+
+.back {
+    text-align: center;
+    margin-top: 45px;
+}
+
+.back a {
+    color: #888;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.back a:hover {
+    color: #d6b36a;
+}
+
+.footer {
+    text-align: center;
+    color: #555;
+    font-size: 12px;
+    margin-top: 60px;
+}
+
+@media (max-width: 600px) {
+
+    .wrap {
+        padding: 40px 18px;
+    }
+
+    h1 {
+        font-size: 34px;
+    }
+
+    .contact-row {
+        display: block;
+    }
+
+    .label {
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    .contact-row a,
+    .contact-row b {
+        font-size: 16px;
+    }
+
+    .button {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="wrap">
+
+    <div class="logo">
+        <div class="logo-title">Игорь Лики</div>
+        <div class="logo-subtitle">
+            Пластическая хирургия
+        </div>
+    </div>
+
+    <h1>Контакты</h1>
+
+    <div class="intro">
+        Выберите удобный способ связи для записи на консультацию.
+    </div>
+
+    <div class="contacts">
+
+        <!-- ТЕЛЕФОН -->
+        <div class="contact-row">
+            <div class="label">Телефон</div>
+            <div>
+                <a href="tel:+79013355562">
+                    +7 (901) 335-55-62
+                </a>
+            </div>
+        </div>
+
+        <!-- TELEGRAM -->
+        <div class="contact-row">
+            <div class="label">Telegram</div>
+            <div>
+                <a href="https://t.me/LikiIigor88" target="_blank">
+                    @LikiIigor88 ↗
+                </a>
+            </div>
+        </div>
+
+        <!-- MAX -->
+        <div class="contact-row">
+            <div class="label">MAX</div>
+            <div>
+                <a href="https://max.ru/ВАШ_ПРОФИЛЬ" target="_blank">
+                    Написать в MAX ↗
+                </a>
+            </div>
+        </div>
+
+        <!-- INSTAGRAM -->
+        <div class="contact-row">
+            <div class="label">Instagram</div>
+            <div>
+                <a href="https://www.instagram.com/likiiigor"
+                   target="_blank">
+                    @likiiigor ↗
+                </a>
+            </div>
+        </div>
+
+        <!-- КОНСУЛЬТАЦИЯ -->
+        <div class="contact-row">
+            <div class="label">Консультация</div>
+            <div>
+                <b>По предварительной записи</b>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="buttons">
+
+        <a class="button"
+           href="tel:+79013355562">
+            📞 ПОЗВОНИТЬ
+        </a>
+
+        <a class="button"
+           href="https://t.me/LikiIigor88"
+           target="_blank">
+            TELEGRAM
+        </a>
+
+        <a class="button"
+           href="https://max.ru/ВАШ_ПРОФИЛЬ"
+           target="_blank">
+            MAX
+        </a>
+
+    </div>
+
+    <div class="back">
+        <a href="index.html">
+            ← Вернуться на сайт
+        </a>
+    </div>
+
+    <div class="footer">
+        © 2026 Игорь Лики · Пластическая хирургия
+    </div>
+
+</div>
+
+</body>
+</html>
