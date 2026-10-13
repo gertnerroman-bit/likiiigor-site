@@ -64,6 +64,17 @@ footer{border-top:1px solid var(--line);padding:28px 0;color:#827d74;font-size:1
 @media(max-width:1000px){.rv-card{flex-basis:calc((100% - 15px)/2)}}
 @media(max-width:640px){.rv-card{flex-basis:86%;min-height:0}.rv-card p{font-size:21px}.rv-score{font-size:44px}.rv-btn{width:42px;height:42px}}
 @media(prefers-reduced-motion:reduce){.rv-track{scroll-behavior:auto}.rv-card{transition:none}.rv-progress{display:none}}
+
+.js-anim .portrait-frame{clip-path:inset(100% 0 0 0)}
+.js-anim .portrait-frame img{transform:scale(1.18);filter:contrast(1.02) saturate(.72) brightness(.5)}
+.js-anim.is-in .hero-visual.pf-ready .portrait-frame{clip-path:inset(0 0 0 0);transition:clip-path 2.4s cubic-bezier(.65,0,.15,1) .15s}
+.js-anim.is-in .hero-visual.pf-ready .portrait-frame img{transform:none;filter:contrast(1.02) saturate(.72) brightness(1);transition:transform 3.6s cubic-bezier(.16,1,.3,1) .15s,filter 2.8s ease .5s}
+.portrait-frame:after{content:"";position:absolute;left:0;right:0;top:100%;height:2px;z-index:3;pointer-events:none;opacity:0;background:linear-gradient(90deg,transparent,var(--gold2) 22%,var(--gold2) 78%,transparent);box-shadow:0 0 24px 3px rgba(229,196,124,.5)}
+.js-anim.is-in .hero-visual.pf-ready .portrait-frame:after{animation:pfLine 2.4s cubic-bezier(.65,0,.15,1) .15s both,pfLineFade 1.2s ease 2.3s both}
+@keyframes pfLine{from{top:100%}to{top:0}}
+@keyframes pfLineFade{from{opacity:1}to{opacity:0}}
+.js-anim .hero-visual .signature{opacity:0;transform:translateY(18px);transition:opacity 1.6s ease 2.1s,transform 1.6s cubic-bezier(.2,.7,.2,1) 2.1s}
+.js-anim.is-in .hero-visual.pf-ready .signature{opacity:1;transform:none}
 </style>
 <script>if(!window.matchMedia("(prefers-reduced-motion: reduce)").matches)document.documentElement.classList.add("js-anim")</script>
 </head>
@@ -223,6 +234,13 @@ var h=location.hash.slice(1);if(h&&document.getElementById("tpl-"+h)){document.g
     cards.forEach(function(card){io.observe(card)});
     new IntersectionObserver(function(es){inView=es[0].isIntersecting;restart()},{threshold:.3}).observe(c);
   }else{cards.forEach(function(card){card.classList.add('is-active')});inView=true;restart()}
+})();
+</script>
+<script>
+(function(){
+  var v=document.querySelector('.hero-visual'),img=v&&v.querySelector('.portrait-frame img');if(!img)return;
+  function ready(){v.classList.add('pf-ready')}
+  if(img.complete)ready();else{img.addEventListener('load',ready);img.addEventListener('error',ready);setTimeout(ready,4000)}
 })();
 </script>
 </body></html>
