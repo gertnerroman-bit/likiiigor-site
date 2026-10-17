@@ -6,11 +6,8 @@
 <meta name="theme-color" content="#070707">
 <title>Ликий Игорь — гинеколог-хирург</title>
 <meta name="description" content="Персональный сайт Ликия Игоря — оперирующего гинеколога-хирурга.">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <style>
-
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap');
 :root{--black:#070707;--panel:#11100e;--gold:#c8a15a;--gold2:#e5c47c;--cream:#f4ead6;--white:#f8f6f1;--muted:#aaa49a;--line:rgba(200,161,90,.28);--max:1280px}
 *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--black);color:var(--white);font-family:Manrope,Arial,sans-serif;line-height:1.55}
 body:before{content:"";position:fixed;inset:0;pointer-events:none;opacity:.03;background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 180 180' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");z-index:100}
@@ -37,7 +34,7 @@ section{padding:115px 0}.section-head{display:flex;justify-content:space-between
 footer{border-top:1px solid var(--line);padding:28px 0;color:#827d74;font-size:10px;text-transform:uppercase;letter-spacing:1px}.footer{display:flex;justify-content:space-between;gap:20px}
 .lightbox{position:fixed;inset:0;background:rgba(0,0,0,.94);z-index:100;display:none;place-items:center;padding:30px}.lightbox.open{display:grid}.lightbox img{max-width:92vw;max-height:88vh;object-fit:contain}.close{position:absolute;right:25px;top:20px;color:var(--gold2);font-size:36px;background:none;border:0;cursor:pointer}
 @media(max-width:1000px){.wrap{width:min(var(--max),calc(100% - 40px))}nav{display:none}.mobile-menu{display:block;background:none;color:var(--gold2);border:1px solid var(--line);padding:9px 11px}.hero-grid{grid-template-columns:1fr;min-height:auto}.hero-copy{padding:70px 0 20px}.hero-visual{height:570px;justify-content:center}.portrait-frame{height:570px;width:100%;max-width:620px}.service-grid{grid-template-columns:repeat(2,1fr)}.gallery-grid{grid-template-columns:repeat(2,1fr)}.review-grid{grid-template-columns:1fr 1fr}.about-grid,.contact-grid{grid-template-columns:1fr;gap:35px}.about-photo{height:520px}}
-@media(max-width:650px){body:before{display:none}header{-webkit-backdrop-filter:none;backdrop-filter:none;background:rgba(7,7,7,.97)}header,.nav{height:68px}.brand{min-width:0}.brand-mark{width:44px;height:52px;padding-right:10px}.brand-name{font-size:16px}.brand-name small{font-size:7px}.wrap{width:calc(100% - 30px)}.hero{padding-top:68px}h1{font-size:56px}.hero-role{font-size:23px}.hero-desc{font-size:14px}.hero-stats{gap:17px;flex-wrap:wrap;margin-top:35px}.stat strong{font-size:25px}section{padding:78px 0}.section-head{display:block;margin-bottom:30px}h2{font-size:42px}.section-intro{margin-top:15px}.portrait-frame{height:480px}.service-grid,.review-grid,.gallery-grid{grid-template-columns:1fr}.gallery-item{height:400px}.review{min-height:auto}.quote p{font-size:34px}.about-photo{height:430px}.footer{display:block}.footer div+div{margin-top:8px}}
+@media(max-width:650px){header,.nav{height:68px}.brand{min-width:0}.brand-mark{width:44px;height:52px;padding-right:10px}.brand-name{font-size:16px}.brand-name small{font-size:7px}.wrap{width:calc(100% - 30px)}.hero{padding-top:68px}h1{font-size:56px}.hero-role{font-size:23px}.hero-desc{font-size:14px}.hero-stats{gap:17px;flex-wrap:wrap;margin-top:35px}.stat strong{font-size:25px}section{padding:78px 0}.section-head{display:block;margin-bottom:30px}h2{font-size:42px}.section-intro{margin-top:15px}.portrait-frame{height:480px}.service-grid,.review-grid,.gallery-grid{grid-template-columns:1fr}.gallery-item{height:400px}.review{min-height:auto}.quote p{font-size:34px}.about-photo{height:430px}.footer{display:block}.footer div+div{margin-top:8px}}
 
 .hero-highlights{display:flex;gap:44px;margin:26px 0 30px;padding:22px 0 22px 26px;border-left:2px solid var(--gold)}.highlight strong{display:block;font-family:"Cormorant Garamond",serif;font-size:clamp(46px,5.2vw,72px);line-height:1;font-weight:700;color:var(--gold2);font-variant-numeric:tabular-nums;white-space:nowrap}.highlight>span{display:block;margin-top:10px;max-width:190px;font-size:11px;line-height:1.5;color:var(--cream);text-transform:uppercase;letter-spacing:1.6px}.js-anim .highlight{opacity:0;transform:translateY(24px);transition:opacity .9s ease,transform .9s cubic-bezier(.2,.7,.2,1)}.js-anim .highlight:nth-child(2){transition-delay:.25s}.js-anim .hero-highlights{border-left-color:transparent;transition:border-color 1.2s ease .2s}.js-anim.is-in .highlight{opacity:1;transform:none}.js-anim.is-in .hero-highlights{border-left-color:var(--gold)}@media(max-width:640px){.hero-highlights{gap:26px;padding-left:18px;margin:20px 0 24px}.highlight>span{font-size:10px;letter-spacing:1.2px}}@media(prefers-reduced-motion:reduce){.js-anim .highlight,.js-anim .hero-highlights{transition:none}}
 
@@ -128,100 +125,12 @@ footer{border-top:1px solid var(--line);padding:28px 0;color:#827d74;font-size:1
 @media(max-width:1000px){.ch{grid-template-columns:1fr;gap:26px}.ch-head{position:static}.chapters{gap:80px}}
 @media(max-width:650px){.curtain-stage{height:150vh}.ch-grid{grid-template-columns:repeat(2,1fr)!important;grid-auto-rows:150px;gap:8px}.ph.big,.ph.wide{grid-column:span 2}.ph-cap{opacity:1;transform:none;font-size:11px;padding:24px 10px 9px}.ch-num{font-size:48px}.ch-head h3{font-size:32px}.lb-nav{width:42px;height:42px;top:auto;bottom:18px;transform:none}.ch-grid .ph.tall:last-child:nth-child(odd),.ch:last-child .ph.tall{grid-column:span 2}}
 @media(prefers-reduced-motion:reduce){.ph{clip-path:none}.ph img{transform:none}}
-
-/* Mobile-first refinement: compact navigation, readable type and stable layouts */
-@media(max-width:1000px){
-  nav.show{display:flex!important;position:absolute;top:68px;left:0;right:0;padding:18px 20px 22px;background:#090908;border-bottom:1px solid var(--line);flex-direction:column;align-items:stretch;gap:0;box-shadow:0 18px 30px rgba(0,0,0,.4)}
-  nav.show a{padding:13px 4px;border-bottom:1px solid rgba(200,161,90,.13);font-size:12px}
-  nav.show a:last-child{border-bottom:0}
-  .nav{gap:10px}.mobile-menu{min-width:44px;min-height:44px;font-size:20px;border-radius:4px}
-  .nav-btn{padding:12px 13px;font-size:10px;white-space:nowrap}
-}
-@media(max-width:650px){
-  html{scroll-padding-top:76px}
-  .wrap{width:calc(100% - 32px)}
-  .hero{min-height:0;background:radial-gradient(circle at 75% 25%,rgba(200,161,90,.1),transparent 38%),#070707}
-  .hero-grid{display:flex;flex-direction:column;align-items:stretch}
-  .hero-copy{padding:38px 0 18px}
-  .eyebrow{font-size:9px;letter-spacing:2px;gap:9px}
-  .eyebrow:before{width:24px}
-  h1{font-size:clamp(43px,12vw,58px);line-height:.94;letter-spacing:-1.3px;margin:18px 0}
-  .hero-role{font-size:22px;line-height:1.15}
-  .hero-desc{font-size:14px;line-height:1.7;margin:16px 0 22px}
-  .hero-actions{display:grid;grid-template-columns:1fr;gap:10px}
-  .hero-actions a,.hero-actions button{width:100%;min-height:48px;display:flex;align-items:center;justify-content:center;text-align:center}
-  .hero-highlights{gap:18px;padding:16px 0 16px 14px;margin:18px 0}
-  .highlight strong{font-size:clamp(34px,9vw,46px)}
-  .highlight>span{font-size:9px;letter-spacing:1px;max-width:140px}
-  .hero-stats{gap:12px 20px;margin-top:22px;padding-top:16px}
-  .stat{flex:1 1 28%;min-width:80px}.stat strong{font-size:23px}.stat span{font-size:9px;letter-spacing:.7px}
-  .hero-visual{height:auto;min-height:0;margin:0 -1px;justify-content:center}
-  .portrait-frame{height:min(112vw,480px);min-height:330px;width:100%;max-width:none;border:1px solid var(--line)}
-  .signature{right:18px;bottom:24px;font-size:20px}
-  section{padding:58px 0}
-  .section-head{margin-bottom:24px}
-  h2{font-size:clamp(35px,9vw,43px);line-height:1}
-  .section-intro{font-size:13px;line-height:1.7}
-  .about-grid,.contact-grid{gap:24px}
-  .about-photo{height:min(105vw,430px);padding:7px}
-  .about-photo:after{inset:17px}
-  .about-copy p{font-size:14px;line-height:1.75}
-  .gold-list li{font-size:12px;padding:14px 0;gap:12px}
-  .service-grid{grid-template-columns:1fr;gap:10px}
-  .service{min-height:0;padding:22px}
-  .service h3{font-size:27px;margin:30px 0 10px;padding-right:25px}
-  .service p{font-size:13px;line-height:1.65}
-  .gallery-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}
-  .gallery-item{height:clamp(155px,54vw,245px)}
-  .gallery-item span{opacity:1;left:8px;bottom:8px;padding:6px 8px;font-size:8px;letter-spacing:.8px}
-  .review-grid{grid-template-columns:1fr;gap:10px}
-  .review{padding:22px;min-height:0}
-  .review p{font-size:22px}
-  .quote p{font-size:clamp(27px,7.5vw,34px);line-height:1.15}
-  .contact-panel{padding:20px}
-  .contact-row{display:block;padding:14px 0;font-size:13px}
-  .contact-row span,.contact-row b{display:block}
-  .contact-row b{margin-top:5px;overflow-wrap:anywhere}
-  .footer{font-size:9px;line-height:1.7}
-  .lightbox{padding:16px}
-  .lightbox img{max-width:100%;max-height:72vh}
-  .lb-fig figcaption{font-size:11px;text-align:center}
-  .lb-prev{left:12px}.lb-next{right:12px}
-  .curtain-section{padding-bottom:58px}
-  .curtain-title{padding:0 18px}
-  .curtain-title p{font-size:13px;line-height:1.65}
-  .scope-hud{letter-spacing:1px}
-  .chapters{gap:58px;padding-top:12px}
-  .ch-grid{grid-auto-rows:clamp(120px,38vw,155px);gap:7px}
-  .ch-head p{font-size:13px;line-height:1.65}
-  .ch-num{font-size:42px}
-  .ch-head h3{font-size:30px}
-}
-@media(max-width:380px){
-  .brand-mark{width:36px;height:46px;padding-right:7px}
-  .brand-name{font-size:14px;letter-spacing:.6px}
-  .brand-name small{font-size:6px;letter-spacing:1.5px}
-  .nav-btn{padding:10px 9px;font-size:9px;letter-spacing:.4px}
-  .mobile-menu{padding:7px;min-width:40px}
-  .gallery-grid{grid-template-columns:1fr}
-  .gallery-item{height:72vw}
-  .hero-highlights{gap:12px}
-}
-@media(prefers-reduced-motion:reduce){
-  html{scroll-behavior:auto}
-  *,*:before,*:after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important;scroll-behavior:auto!important}
-}
-
-/* Keep photographs visible even if reveal animations fail */
-.ph{clip-path:inset(0);transition:none}
-.ph img{transform:none}
-.js-anim .hero-visual .signature{opacity:1;transform:none}
 </style>
 <script>if(!window.matchMedia("(prefers-reduced-motion: reduce)").matches)document.documentElement.classList.add("js-anim")</script>
 </head>
 <body>
 <header><div class="wrap nav">
-<a class="brand" href="#"><img class="brand-mark" src="./likiiigor-header-logo.svg" alt="Ликий Игорь — гинеколог-хирург"><div class="brand-name">Ликий Игорь<small>Гинеколог-хирург</small></div></a>
+<a class="brand" href="#"><img class="brand-mark" src="likiiigor-header-logo.svg" alt="Ликий Игорь — гинеколог-хирург"><div class="brand-name">Ликий Игорь<small>Гинеколог-хирург</small></div></a>
 <nav><a href="#about">Обо мне</a><a href="#services">Направления</a><a href="#gallery">Практика</a><a href="#reviews">Отзывы</a><a href="#contacts">Контакты</a></nav>
 <a class="nav-btn" href="contacts.html">Записаться</a><button class="mobile-menu" onclick="document.querySelector('nav').classList.toggle('show')">☰</button>
 </div></header>
@@ -235,10 +144,10 @@ footer{border-top:1px solid var(--line);padding:28px 0;color:#827d74;font-size:1
 <p class="hero-desc">Профессиональная помощь женщинам в сложных клинических ситуациях. Спокойный подход, хирургическая практика и внимание к каждому пациенту.</p>
 <div class="hero-actions"><a class="gold-btn" href="contacts.html">Записаться на консультацию →</a><a class="outline-btn" href="https://www.instagram.com/likiiigor" target="_blank">Instagram ↗</a></div>
 <div class="hero-stats"><div class="stat"><strong>196</strong><span>публикаций</span></div><div class="stat"><strong>4 650+</strong><span>подписчиков</span></div><div class="stat"><strong>5.0 ★</strong><span>оценка пациентов</span></div></div>
-</div><div class="hero-visual"><div class="portrait-frame"><img src="./glavna.jpg" fetchpriority="high" alt="Ликий Игорь — врач"></div><div class="signature">«Главное — здоровье<br>и доверие пациента»<small>Ликий Игорь</small></div></div></div></section>
+</div><div class="hero-visual"><div class="portrait-frame"><img src="doctor.jpg" alt="Ликий Игорь — врач"></div><div class="signature">«Главное — здоровье<br>и доверие пациента»<small>Ликий Игорь</small></div></div></div></section>
 <div class="gold-line"></div>
 
-<section class="about" id="about"><div class="wrap about-grid"><div class="about-photo"><img src="./img/doctor-portrait.webp" alt="Игорь Ликий"></div><div class="about-copy">
+<section class="about" id="about"><div class="wrap about-grid"><div class="about-photo"><img src="img/doctor-portrait.webp" alt="Игорь Ликий"></div><div class="about-copy">
 <div class="section-kicker">01 / Обо мне</div><h2>Врач.<br>Хирург.</h2>
 <p>Я придерживаюсь принципа: сложная клиническая ситуация требует не громких обещаний, а точной диагностики, продуманной тактики и ответственности на каждом этапе.</p>
 <p>Более 15 лет в хирургии и более 3 000 успешно проведённых операций в год — опыт, который позволяет выбирать тактику, наиболее подходящую именно вам.</p>
@@ -277,11 +186,11 @@ footer{border-top:1px solid var(--line);padding:28px 0;color:#827d74;font-size:1
 
 <section class="curtain-section" id="gallery">
 <div class="curtain-stage" id="curtainStage"><div class="curtain-sticky">
-<div class="curtain-bg"><div class="curtain-img" style="background-image:url('./img/practice/op-look.webp')"></div></div>
+<div class="curtain-bg"><div class="curtain-img" style="background-image:url('img/practice/op-look.webp')"></div></div>
 <div class="curtain-title"><div class="section-kicker">03 / Практика</div><h2>За занавесом<br><span>операционной</span></h2><p>То, что пациентка обычно не видит: подготовка, оборудование, сама операция и команда, которая работает рядом.</p><div class="curtain-hint">Листайте ниже ↓</div></div>
 <div class="scope-ring" aria-hidden="true"><i></i><i></i><i></i><i></i></div><div class="scope-hud" aria-hidden="true"><span class="hud-tl"><b class="rec"></b>REC&nbsp;&nbsp;<em id="scopeTime">00:00:00</em></span><span class="hud-tr">4K&nbsp;·&nbsp;30°</span><span class="hud-bl">Лапароскопия</span><span class="hud-br">Увеличение&nbsp;×<em id="scopeZoom">10.0</em></span></div>
 </div></div>
-<div class="wrap chapters"><div class="ch"><div class="ch-head reveal"><div class="ch-num">01</div><h3>Подготовка</h3><p>Каждая операция начинается задолго до операционной: обследование, продуманный план, разговор с пациенткой и настрой всей команды.</p></div><div class="ch-grid" style="--cols:3"><button class="ph tall" type="button" data-full="./img/practice/prep-suit.webp" data-cap="Перед операционным днём"><img src="./img/practice/prep-suit-sm.webp" alt="Перед операционным днём" loading="lazy" decoding="async"><span class="ph-cap">Перед операционным днём</span></button><button class="ph tall" type="button" data-full="./img/practice/prep-corridor.webp" data-cap="Коридор оперблока"><img src="./img/practice/prep-corridor-sm.webp" alt="Коридор оперблока" loading="lazy" decoding="async"><span class="ph-cap">Коридор оперблока</span></button><button class="ph tall" type="button" data-full="./img/practice/equip-syringes.webp" data-cap="Подготовка к процедуре"><img src="./img/practice/equip-syringes-sm.webp" alt="Подготовка к процедуре" loading="lazy" decoding="async"><span class="ph-cap">Подготовка к процедуре</span></button></div></div><div class="ch"><div class="ch-head reveal"><div class="ch-num">02</div><h3>Оборудование</h3><p>Многие вмешательства выполняются лапароскопически — через небольшие проколы под видеоконтролем. Это меньше боли, почти незаметные следы и более быстрое восстановление.</p></div><div class="ch-grid" style="--cols:3"><button class="ph tall" type="button" data-full="./img/practice/equip-storz.webp" data-cap="Эндоскопическая стойка Karl Storz"><img src="./img/practice/equip-storz-sm.webp" alt="Эндоскопическая стойка Karl Storz" loading="lazy" decoding="async"><span class="ph-cap">Эндоскопическая стойка Karl Storz</span></button><button class="ph tall" type="button" data-full="./img/practice/equip-instruments.webp" data-cap="Инструменты для лапароскопии"><img src="./img/practice/equip-instruments-sm.webp" alt="Инструменты для лапароскопии" loading="lazy" decoding="async"><span class="ph-cap">Инструменты для лапароскопии</span></button><button class="ph tall" type="button" data-full="./img/practice/equip-laparoscopy.webp" data-cap="Набор для малоинвазивных операций"><img src="./img/practice/equip-laparoscopy-sm.webp" alt="Набор для малоинвазивных операций" loading="lazy" decoding="async"><span class="ph-cap">Набор для малоинвазивных операций</span></button></div></div><div class="ch"><div class="ch-head reveal"><div class="ch-num">03</div><h3>Операция</h3><p>Хирург видит всё на мониторе в многократном увеличении. Это позволяет работать точно и бережно, сохраняя здоровые ткани.</p></div><div class="ch-grid" style="--cols:3"><button class="ph big" type="button" data-full="./img/practice/op-bw.webp" data-cap="Операция — работа всей бригады"><img src="./img/practice/op-bw-sm.webp" alt="Операция — работа всей бригады" loading="lazy" decoding="async"><span class="ph-cap">Операция — работа всей бригады</span></button><button class="ph tall" type="button" data-full="./img/practice/op-laparoscopy.webp" data-cap="Лапароскопическая операция"><img src="./img/practice/op-laparoscopy-sm.webp" alt="Лапароскопическая операция" loading="lazy" decoding="async"><span class="ph-cap">Лапароскопическая операция</span></button><button class="ph tall" type="button" data-full="./img/practice/op-hands.webp" data-cap="Точность в каждом движении"><img src="./img/practice/op-hands-sm.webp" alt="Точность в каждом движении" loading="lazy" decoding="async"><span class="ph-cap">Точность в каждом движении</span></button><button class="ph wide" type="button" data-full="./img/practice/op-team-green.webp" data-cap="Контроль хода операции на мониторе"><img src="./img/practice/op-team-green-sm.webp" alt="Контроль хода операции на мониторе" loading="lazy" decoding="async"><span class="ph-cap">Контроль хода операции на мониторе</span></button></div></div><div class="ch"><div class="ch-head reveal"><div class="ch-num">04</div><h3>Команда</h3><p>Рядом всегда ассистенты, операционная сестра и анестезиолог. Безопасность пациентки — это работа всей бригады, а не одного человека.</p></div><div class="ch-grid" style="--cols:3"><button class="ph big" type="button" data-full="./img/practice/team-table.webp" data-cap="Ассистент и операционная сестра"><img src="./img/practice/team-table-sm.webp" alt="Ассистент и операционная сестра" loading="lazy" decoding="async"><span class="ph-cap">Ассистент и операционная сестра</span></button><button class="ph tall" type="button" data-full="./img/practice/team-assist.webp" data-cap="Подготовка инструментов"><img src="./img/practice/team-assist-sm.webp" alt="Подготовка инструментов" loading="lazy" decoding="async"><span class="ph-cap">Подготовка инструментов</span></button></div></div></div>
+<div class="wrap chapters"><div class="ch"><div class="ch-head reveal"><div class="ch-num">01</div><h3>Подготовка</h3><p>Каждая операция начинается задолго до операционной: обследование, продуманный план, разговор с пациенткой и настрой всей команды.</p></div><div class="ch-grid" style="--cols:3"><button class="ph tall" type="button" data-full="img/practice/prep-suit.webp" data-cap="Перед операционным днём"><img src="img/practice/prep-suit-sm.webp" alt="Перед операционным днём" loading="lazy" decoding="async"><span class="ph-cap">Перед операционным днём</span></button><button class="ph tall" type="button" data-full="img/practice/prep-corridor.webp" data-cap="Коридор оперблока"><img src="img/practice/prep-corridor-sm.webp" alt="Коридор оперблока" loading="lazy" decoding="async"><span class="ph-cap">Коридор оперблока</span></button><button class="ph tall" type="button" data-full="img/practice/equip-syringes.webp" data-cap="Подготовка к процедуре"><img src="img/practice/equip-syringes-sm.webp" alt="Подготовка к процедуре" loading="lazy" decoding="async"><span class="ph-cap">Подготовка к процедуре</span></button></div></div><div class="ch"><div class="ch-head reveal"><div class="ch-num">02</div><h3>Оборудование</h3><p>Многие вмешательства выполняются лапароскопически — через небольшие проколы под видеоконтролем. Это меньше боли, почти незаметные следы и более быстрое восстановление.</p></div><div class="ch-grid" style="--cols:3"><button class="ph tall" type="button" data-full="img/practice/equip-storz.webp" data-cap="Эндоскопическая стойка Karl Storz"><img src="img/practice/equip-storz-sm.webp" alt="Эндоскопическая стойка Karl Storz" loading="lazy" decoding="async"><span class="ph-cap">Эндоскопическая стойка Karl Storz</span></button><button class="ph tall" type="button" data-full="img/practice/equip-instruments.webp" data-cap="Инструменты для лапароскопии"><img src="img/practice/equip-instruments-sm.webp" alt="Инструменты для лапароскопии" loading="lazy" decoding="async"><span class="ph-cap">Инструменты для лапароскопии</span></button><button class="ph tall" type="button" data-full="img/practice/equip-laparoscopy.webp" data-cap="Набор для малоинвазивных операций"><img src="img/practice/equip-laparoscopy-sm.webp" alt="Набор для малоинвазивных операций" loading="lazy" decoding="async"><span class="ph-cap">Набор для малоинвазивных операций</span></button></div></div><div class="ch"><div class="ch-head reveal"><div class="ch-num">03</div><h3>Операция</h3><p>Хирург видит всё на мониторе в многократном увеличении. Это позволяет работать точно и бережно, сохраняя здоровые ткани.</p></div><div class="ch-grid" style="--cols:3"><button class="ph big" type="button" data-full="img/practice/op-bw.webp" data-cap="Операция — работа всей бригады"><img src="img/practice/op-bw-sm.webp" alt="Операция — работа всей бригады" loading="lazy" decoding="async"><span class="ph-cap">Операция — работа всей бригады</span></button><button class="ph tall" type="button" data-full="img/practice/op-laparoscopy.webp" data-cap="Лапароскопическая операция"><img src="img/practice/op-laparoscopy-sm.webp" alt="Лапароскопическая операция" loading="lazy" decoding="async"><span class="ph-cap">Лапароскопическая операция</span></button><button class="ph tall" type="button" data-full="img/practice/op-hands.webp" data-cap="Точность в каждом движении"><img src="img/practice/op-hands-sm.webp" alt="Точность в каждом движении" loading="lazy" decoding="async"><span class="ph-cap">Точность в каждом движении</span></button><button class="ph wide" type="button" data-full="img/practice/op-team-green.webp" data-cap="Контроль хода операции на мониторе"><img src="img/practice/op-team-green-sm.webp" alt="Контроль хода операции на мониторе" loading="lazy" decoding="async"><span class="ph-cap">Контроль хода операции на мониторе</span></button></div></div><div class="ch"><div class="ch-head reveal"><div class="ch-num">04</div><h3>Команда</h3><p>Рядом всегда ассистенты, операционная сестра и анестезиолог. Безопасность пациентки — это работа всей бригады, а не одного человека.</p></div><div class="ch-grid" style="--cols:3"><button class="ph big" type="button" data-full="img/practice/team-table.webp" data-cap="Ассистент и операционная сестра"><img src="img/practice/team-table-sm.webp" alt="Ассистент и операционная сестра" loading="lazy" decoding="async"><span class="ph-cap">Ассистент и операционная сестра</span></button><button class="ph tall" type="button" data-full="img/practice/team-assist.webp" data-cap="Подготовка инструментов"><img src="img/practice/team-assist-sm.webp" alt="Подготовка инструментов" loading="lazy" decoding="async"><span class="ph-cap">Подготовка инструментов</span></button></div></div></div>
 </section>
 
 <section class="reviews" id="reviews"><div class="wrap">
@@ -309,7 +218,7 @@ footer{border-top:1px solid var(--line);padding:28px 0;color:#827d74;font-size:1
 <div class="contact-panel"><div class="contact-row"><span>Телефон</span><b><a href="tel:+79013355562">+7 (901) 335-55-62</a></b></div><div class="contact-row"><span>Telegram</span><b><a href="https://t.me/LikiIigor88" target="_blank">@LikiIigor88 ↗</a></b></div><div class="contact-row"><span>MAX</span><b><a href="https://max.ru/join/fYK8CpCLMZehPM2tJrRGDGN4-Ml_Asa1TEYr2nURvTE" target="_blank">Написать в MAX ↗</a></b></div><div class="contact-row"><span>Instagram</span><b><a href="https://www.instagram.com/likiiigor" target="_blank">@likiiigor ↗</a></b></div><div class="contact-row"><span>Консультация</span><b>По предварительной записи</b></div><div style="padding-top:25px;display:flex;gap:12px;flex-wrap:wrap"><a class="gold-btn" href="tel:+79013355562">Позвонить →</a><a class="outline-btn" href="https://t.me/LikiIigor88" target="_blank">Telegram →</a><a class="outline-btn" href="https://max.ru/join/fYK8CpCLMZehPM2tJrRGDGN4-Ml_Asa1TEYr2nURvTE" target="_blank">MAX →</a></div></div>
 </div></section>
 </main>
-<footer><div class="wrap footer"><div>created by Roman Gertner</div><div>Информация на сайте не заменяет очную медицинскую консультацию.</div></div></footer>
+<footer><div class="wrap footer"><div>© 2026 Ликий Игорь</div><div>Информация на сайте не заменяет очную медицинскую консультацию.</div></div></footer>
 <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Просмотр фото"><button class="close lb-close" aria-label="Закрыть">×</button><button class="lb-nav lb-prev" aria-label="Предыдущее фото">‹</button><figure class="lb-fig"><img id="lightboxImg" alt=""><figcaption id="lightboxCap"></figcaption></figure><button class="lb-nav lb-next" aria-label="Следующее фото">›</button></div>
 <script>
 (function(){
@@ -400,37 +309,4 @@ var h=location.hash.slice(1);if(h&&document.getElementById("tpl-"+h)){document.g
   if(img.complete)ready();else{img.addEventListener('load',ready);img.addEventListener('error',ready);setTimeout(ready,4000)}
 })();
 </script>
-
-<script>
-(function(){
-  var nav=document.querySelector('header nav');
-  var btn=document.querySelector('.mobile-menu');
-  if(!nav||!btn)return;
-  btn.setAttribute('aria-label','Открыть меню');
-  btn.setAttribute('aria-expanded','false');
-  btn.addEventListener('click',function(){
-    var open=nav.classList.contains('show');
-    btn.setAttribute('aria-expanded',String(!open));
-    btn.setAttribute('aria-label',open?'Открыть меню':'Закрыть меню');
-    btn.textContent=open?'☰':'×';
-  });
-  nav.querySelectorAll('a').forEach(function(link){
-    link.addEventListener('click',function(){
-      nav.classList.remove('show');
-      btn.setAttribute('aria-expanded','false');
-      btn.setAttribute('aria-label','Открыть меню');
-      btn.textContent='☰';
-    });
-  });
-  document.addEventListener('keydown',function(e){
-    if(e.key==='Escape'&&nav.classList.contains('show')){
-      nav.classList.remove('show');
-      btn.setAttribute('aria-expanded','false');
-      btn.setAttribute('aria-label','Открыть меню');
-      btn.textContent='☰';
-    }
-  });
-})();
-</script>
-
 </body></html>
