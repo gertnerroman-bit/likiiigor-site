@@ -1,0 +1,293 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#070707">
+<title>Контрацепция: внутриматочная система Мирена — Ликий Игорь, гинеколог-хирург</title>
+<meta name="description" content="Внутриматочная система Мирена простым языком: как работает, кому подходит и кому нельзя, как проходит установка, чего ожидать. Интерактивная 3D-модель.">
+<link rel="canonical" href="https://www.likiiigor.ru/kontracepciya.html">
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap');
+:root{--black:#070707;--panel:#11100e;--gold:#c8a15a;--gold2:#e5c47c;--cream:#f4ead6;--white:#f8f6f1;--muted:#aaa49a;--line:rgba(200,161,90,.28);--max:1280px}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--black);color:var(--white);font-family:Manrope,Arial,sans-serif;line-height:1.6}
+a{color:inherit;text-decoration:none}button{font:inherit}.wrap{width:min(var(--max),calc(100% - 64px));margin:auto}
+header{height:82px;position:fixed;top:0;left:0;right:0;z-index:50;background:rgba(7,7,7,.84);backdrop-filter:blur(18px);border-bottom:1px solid rgba(200,161,90,.18)}
+.nav{height:82px;display:flex;align-items:center;justify-content:space-between;gap:30px}.brand{display:flex;align-items:center;gap:13px;min-width:240px}.brand-mark{display:block;width:52px;height:64px;object-fit:contain;flex:0 0 auto;border-right:1px solid var(--line);padding-right:14px}.brand-name{font-family:"Cormorant Garamond",serif;font-size:21px;line-height:1.05;letter-spacing:1.3px;text-transform:uppercase}.brand-name small{display:block;font:600 8px Manrope,Arial,sans-serif;letter-spacing:2.4px;color:var(--gold);margin-top:5px}
+nav{display:flex;align-items:center;gap:30px;font-size:11px;text-transform:uppercase;letter-spacing:1.5px;color:#d4cec3}nav a:hover,nav a.active{color:var(--gold2)}
+.nav-btn,.gold-btn{display:inline-block;background:linear-gradient(135deg,var(--gold2),#a77b35);color:#100e0b;border:0;border-radius:4px;padding:14px 20px;font-weight:800;text-transform:uppercase;letter-spacing:1px;font-size:11px;box-shadow:0 10px 30px rgba(200,161,90,.16);cursor:pointer}.mobile-menu{display:none}
+h1,h2,h3{font-family:"Cormorant Garamond",Georgia,serif;font-weight:600}
+.eyebrow{font-size:11px;color:var(--gold2);letter-spacing:3px;text-transform:uppercase;font-weight:800;display:flex;align-items:center;gap:13px}.eyebrow:before{content:"";width:42px;height:1px;background:var(--gold)}
+
+/* hero + 3D */
+.k-hero{padding:140px 0 70px;background:radial-gradient(circle at 72% 45%,rgba(200,161,90,.12),transparent 32%),linear-gradient(90deg,#070707 0%,#090908 50%,#14120e 100%)}
+.k-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:50px;align-items:center}
+.k-hero h1{font-size:clamp(46px,5.4vw,82px);line-height:.92;letter-spacing:-1.5px;margin:22px 0 22px}.k-hero h1 span{color:var(--gold2)}
+.k-lead{color:#cfc8bc;font-size:17px;max-width:540px;margin:0 0 30px}
+.k-facts{display:flex;gap:34px;flex-wrap:wrap;border-top:1px solid var(--line);padding-top:22px;margin-top:36px;max-width:560px}
+.k-facts strong{display:block;font-family:"Cormorant Garamond";font-size:36px;line-height:1;color:var(--gold2)}.k-facts span{font-size:10px;color:var(--muted);text-transform:uppercase;letter-spacing:1.2px}
+.viewer{position:relative;height:620px;border:1px solid var(--line);background:radial-gradient(circle at 50% 42%,#1c1913 0%,#0c0b09 62%,#080807 100%);overflow:hidden}
+.viewer canvas{display:block;width:100%;height:100%;cursor:grab;touch-action:none}.viewer canvas:active{cursor:grabbing}
+.viewer-hint{position:absolute;left:0;right:0;bottom:18px;text-align:center;font-size:10px;letter-spacing:2px;text-transform:uppercase;color:var(--gold);pointer-events:none;transition:opacity .6s}
+.viewer-tag{position:absolute;left:20px;top:18px;font-size:10px;letter-spacing:2px;text-transform:uppercase;color:var(--muted)}
+.parts{position:absolute;right:16px;top:14px;display:flex;flex-direction:column;gap:8px;align-items:flex-end}
+.parts button{background:rgba(7,7,7,.6);border:1px solid var(--line);color:#e8e0d3;padding:8px 12px;font-size:11px;letter-spacing:.6px;cursor:pointer;transition:.25s;text-align:right}
+.parts button:hover,.parts button.on{border-color:var(--gold);color:var(--gold2);background:rgba(200,161,90,.1)}
+.part-note{position:absolute;left:20px;right:20px;bottom:46px;max-width:420px;margin:0 auto;text-align:center;font-size:13px;color:var(--cream);background:rgba(7,7,7,.72);border:1px solid var(--line);padding:10px 14px;opacity:0;transform:translateY(8px);transition:.35s;pointer-events:none}
+.part-note.show{opacity:1;transform:none}
+.no-gl{position:absolute;inset:0;display:none;place-items:center;text-align:center;padding:30px;color:var(--muted);font-size:14px}
+
+/* article */
+.k-article{padding:90px 0 110px;background:linear-gradient(180deg,#090909,#0d0c0a)}
+.art{max-width:780px;margin:auto}
+.art-sec{padding:34px 0;border-bottom:1px solid rgba(200,161,90,.14)}.art-sec:last-of-type{border-bottom:0}
+.art-num{font-family:"Cormorant Garamond";color:var(--gold);font-size:15px;letter-spacing:2px}
+.art h2{font-size:clamp(34px,3.4vw,46px);line-height:1;margin:4px 0 16px;letter-spacing:-.5px}
+.art p{color:#d8d1c5;font-size:16.5px;margin:0 0 12px}
+.art ul{margin:0;padding:0;list-style:none;display:grid;gap:12px}
+.art li{position:relative;padding-left:28px;color:#d8d1c5;font-size:16.5px}
+.art li:before{content:"";position:absolute;left:0;top:.72em;width:14px;height:1px;background:var(--gold)}
+.art-alert{border:1px solid rgba(210,75,60,.55);background:linear-gradient(120deg,rgba(210,75,60,.12),rgba(210,75,60,.03));padding:30px 32px;margin:34px 0}
+.art-alert h2{color:#f0b2a6}.art-alert li:before{background:#d24b3c}
+.art-note{margin-top:40px;padding:22px 26px;border-left:2px solid var(--gold);color:var(--muted);font-size:14px;font-style:italic}
+.art-cta{margin-top:46px;padding:40px;border:1px solid var(--gold);background:linear-gradient(120deg,rgba(200,161,90,.14),rgba(200,161,90,.03));display:flex;justify-content:space-between;align-items:center;gap:30px;flex-wrap:wrap}
+.art-cta h3{font-size:34px;margin:0 0 6px;line-height:1}.art-cta p{margin:0;color:var(--muted);font-size:14px}
+footer{border-top:1px solid var(--line);padding:28px 0;color:#827d74;font-size:10px;text-transform:uppercase;letter-spacing:1px}.footer{display:flex;justify-content:space-between;gap:20px}
+
+@media(max-width:1000px){.wrap{width:min(var(--max),calc(100% - 40px))}nav{display:none}nav.show{display:flex;position:absolute;top:82px;left:0;right:0;flex-direction:column;gap:18px;padding:26px;background:#0b0a09;border-bottom:1px solid var(--line)}.mobile-menu{display:block;background:none;color:var(--gold2);border:1px solid var(--line);padding:9px 11px}.k-grid{grid-template-columns:1fr}.viewer{height:520px}}
+@media(max-width:650px){header,.nav{height:68px}nav.show{top:68px}.brand{min-width:0}.brand-mark{width:44px;height:52px;padding-right:10px}.brand-name{font-size:16px}.nav-btn{display:none}.wrap{width:calc(100% - 30px)}.k-hero{padding:110px 0 50px}.k-lead{font-size:15px}.viewer{height:440px}.parts{top:auto;bottom:48px;right:10px;left:10px;flex-direction:row;flex-wrap:wrap;justify-content:center}.parts button{padding:7px 10px;font-size:10px}.part-note{bottom:100px}.art p,.art li{font-size:15.5px}.art-cta{padding:28px 22px}.k-facts{gap:20px}.k-facts strong{font-size:28px}.footer{flex-direction:column}}
+</style>
+<script type="importmap">{"imports":{"three":"./js/vendor/three.module.min.js"}}</script>
+</head>
+<body>
+<header><div class="wrap nav">
+<a class="brand" href="index.html"><img class="brand-mark" src="./likiiigor-header-logo.svg" alt="Ликий Игорь — гинеколог-хирург"><div class="brand-name">Ликий Игорь<small>Гинеколог-хирург</small></div></a>
+<nav><a href="index.html#about">Обо мне</a><a href="index.html#services">Направления</a><a class="active" href="kontracepciya.html">Контрацепция</a><a href="index.html#gallery">Практика</a><a href="index.html#reviews">Отзывы</a><a href="index.html#contacts">Контакты</a></nav>
+<a class="nav-btn" href="index.html#zayavka">Записаться</a><button class="mobile-menu" aria-label="Меню" onclick="document.querySelector('nav').classList.toggle('show')">☰</button>
+</div></header>
+
+<main>
+<section class="k-hero"><div class="wrap k-grid">
+<div>
+<div class="eyebrow">Контрацепция</div>
+<h1>Внутриматочная система <span>Мирена</span></h1>
+<p class="k-lead">Коротко и понятно о самом надёжном обратимом методе защиты от беременности. Покрутите модель, чтобы рассмотреть, как устроена система.</p>
+<a class="gold-btn" href="index.html#zayavka">Подобрать метод на консультации →</a>
+<div class="k-facts">
+<div><strong>до 8 лет</strong><span>защиты одной системой</span></div>
+<div><strong>~3 см</strong><span>размер системы</span></div>
+<div><strong>минуты</strong><span>длится установка</span></div>
+</div>
+</div>
+<div class="viewer" id="viewer">
+<div class="viewer-tag">3D-модель · масштаб условный</div>
+<div class="parts" role="group" aria-label="Части системы">
+<button type="button" data-part="arms">Плечики</button>
+<button type="button" data-part="res">Гормональный резервуар</button>
+<button type="button" data-part="threads">Нити</button>
+</div>
+<div class="part-note" id="part-note" aria-live="polite"></div>
+<div class="viewer-hint" id="viewer-hint">Вращайте мышью или пальцем · колёсико — приблизить</div>
+<div class="no-gl" id="no-gl">3D-модель не поддерживается вашим браузером. Обновите браузер или откройте страницу на другом устройстве.</div>
+</div>
+</div></section>
+
+<section class="k-article"><div class="wrap"><article class="art">
+
+<div class="art-sec"><div class="art-num">01</div><h2>Что это такое</h2>
+<p>Мирена — это маленькая гибкая Т-образная пластиковая система длиной около 3 см. На её стержне находится резервуар с гормоном левоноргестрелом. Врач устанавливает её в полость матки, и она каждый день выделяет очень малую дозу гормона прямо там, где он нужен. В кровь попадает совсем немного гормона, поэтому на организм в целом он действует слабо.</p></div>
+
+<div class="art-sec"><div class="art-num">02</div><h2>Как она работает</h2>
+<ul>
+<li>Слизь в шейке матки становится густой, и сперматозоиды не могут пройти в матку.</li>
+<li>Внутренний слой матки (эндометрий) становится тонким, поэтому беременность не наступает.</li>
+<li>Подвижность сперматозоидов снижается.</li>
+</ul></div>
+
+<div class="art-sec"><div class="art-num">03</div><h2>Сколько действует</h2>
+<p>Одна система защищает от беременности до 8 лет. Это один из самых надёжных обратимых методов контрацепции: по эффективности он сопоставим с перевязкой труб, но полностью обратим.</p></div>
+
+<div class="art-sec"><div class="art-num">04</div><h2>Кому подходит</h2>
+<ul>
+<li>Женщинам, которым нужна надёжная долгосрочная защита без ежедневных таблеток.</li>
+<li>При обильных менструациях: Мирена значительно уменьшает объём кровопотери, у многих месячные становятся скудными или прекращаются.</li>
+<li>Кормящим мамам: грудное вскармливание не противопоказано, установка возможна через 6 недель после родов.</li>
+<li>Женщинам, которые не рожали, — тоже можно, решение принимает врач.</li>
+</ul></div>
+
+<div class="art-sec"><div class="art-num">05</div><h2>Кому нельзя</h2>
+<ul>
+<li>При беременности или подозрении на неё.</li>
+<li>При острых воспалениях органов малого таза.</li>
+<li>При раке молочной железы (в том числе подозрении на него) и некоторых других опухолях.</li>
+<li>При кровотечениях из половых путей неясной причины.</li>
+<li>При аномалиях строения матки, мешающих установке.</li>
+</ul>
+<p style="margin-top:14px">Окончательное решение — только после осмотра и обследования у гинеколога.</p></div>
+
+<div class="art-sec"><div class="art-num">06</div><h2>Как проходит установка</h2>
+<p>Процедура занимает несколько минут и проводится в кабинете гинеколога, обычно в первые дни цикла. Возможны кратковременные ощущения, похожие на менструальную боль. Из шейки матки остаются тонкие нити — по ним врач потом легко удалит систему.</p></div>
+
+<div class="art-sec"><div class="art-num">07</div><h2>Чего ожидать в первые месяцы</h2>
+<ul>
+<li>Нерегулярные мажущие выделения в первые 3–6 месяцев — это нормально, затем они обычно уменьшаются.</li>
+<li>Иногда бывают нагрубание груди, головная боль, акне, функциональные кисты яичников, которые чаще всего проходят сами.</li>
+</ul></div>
+
+<div class="art-alert"><h2>Когда срочно к врачу</h2>
+<ul>
+<li>Сильная боль внизу живота, повышение температуры.</li>
+<li>Задержка менструации или признаки беременности.</li>
+<li>Вы не нащупываете нити или, наоборот, чувствуете твёрдый кончик системы.</li>
+</ul></div>
+
+<div class="art-sec"><div class="art-num">08</div><h2>Если захотите беременность</h2>
+<p>Систему можно удалить в любой момент. Способность к зачатию быстро восстанавливается до прежнего уровня.</p></div>
+
+<div class="art-sec"><div class="art-num">09</div><h2>Важно помнить</h2>
+<p>Мирена не защищает от инфекций, передающихся половым путём. Контрольный осмотр — через 1–3 месяца после установки, затем раз в год.</p></div>
+
+<p class="art-note">Информация основана на клинических рекомендациях и инструкции к препарату и не заменяет консультацию врача. Запишитесь на приём, чтобы подобрать метод контрацепции именно вам.</p>
+
+<div class="art-cta"><div><h3>Подберём метод вместе</h3><p>На консультации обсудим ваши цели, обследование и подходящий вариант контрацепции.</p></div><a class="gold-btn" href="index.html#zayavka">Записаться на консультацию →</a></div>
+
+</article></div></section>
+</main>
+
+<footer><div class="wrap footer"><div>© 2026 Ликий Игорь</div><div>Информация на сайте не заменяет очную медицинскую консультацию.</div></div></footer>
+
+<script type="module">
+import * as THREE from 'three';
+import { OrbitControls } from './js/vendor/OrbitControls.js';
+import { RoomEnvironment } from './js/vendor/RoomEnvironment.js';
+
+const box = document.getElementById('viewer');
+let renderer;
+try { renderer = new THREE.WebGLRenderer({ antialias: true, alpha: true }); }
+catch (e) { document.getElementById('no-gl').style.display = 'grid'; throw e; }
+renderer.setPixelRatio(Math.min(devicePixelRatio, 2));
+renderer.outputColorSpace = THREE.SRGBColorSpace;
+renderer.toneMapping = THREE.ACESFilmicToneMapping;
+renderer.toneMappingExposure = 1.05;
+box.prepend(renderer.domElement);
+
+const scene = new THREE.Scene();
+const pmrem = new THREE.PMREMGenerator(renderer);
+scene.environment = pmrem.fromScene(new RoomEnvironment(), 0.04).texture;
+
+const camera = new THREE.PerspectiveCamera(32, 1, 0.1, 1000);
+camera.position.set(0, -12, 132);
+
+const key = new THREE.DirectionalLight(0xfff1d6, 1.4); key.position.set(40, 60, 80); scene.add(key);
+const rim = new THREE.DirectionalLight(0xe5c47c, 1.1); rim.position.set(-60, 20, -60); scene.add(rim);
+scene.add(new THREE.AmbientLight(0xffffff, 0.25));
+
+// Materials
+const plastic = new THREE.MeshPhysicalMaterial({ color: 0xf6f4ee, roughness: 0.32, clearcoat: 0.6, clearcoatRoughness: 0.25, sheen: 0.3 });
+const membrane = new THREE.MeshPhysicalMaterial({ color: 0xece6d8, roughness: 0.22, transmission: 0.35, thickness: 1.2, ior: 1.4, clearcoat: 1, clearcoatRoughness: 0.15 });
+const core = new THREE.MeshStandardMaterial({ color: 0xd9cfb8, roughness: 0.6 });
+const thread = new THREE.MeshStandardMaterial({ color: 0x4a2f1f, roughness: 0.8 });
+
+const iud = new THREE.Group();
+const parts = { arms: [], res: [], threads: [] };
+const add = (mesh, part) => { iud.add(mesh); if (part) parts[part].push(mesh); return mesh; };
+
+// Dimensions in mm (Mirena ≈ 32 × 32 mm)
+const armR = 0.75, stemR = 0.9;
+
+// Arms: gentle downward curve, flexible look
+const armCurve = (dir) => new THREE.CatmullRomCurve3([
+  new THREE.Vector3(0, 0, 0), new THREE.Vector3(dir * 6, 0.25, 0),
+  new THREE.Vector3(dir * 11, -0.3, 0), new THREE.Vector3(dir * 15, -1.4, 0)
+]);
+[-1, 1].forEach(d => {
+  add(new THREE.Mesh(new THREE.TubeGeometry(armCurve(d), 48, armR, 20), plastic), 'arms');
+  const tip = add(new THREE.Mesh(new THREE.SphereGeometry(1.25, 32, 24), plastic), 'arms');
+  tip.position.set(d * 15, -1.4, 0);
+});
+const hub = add(new THREE.Mesh(new THREE.SphereGeometry(1.35, 32, 24), plastic), 'arms');
+
+// Stem
+const stem = add(new THREE.Mesh(new THREE.CylinderGeometry(stemR, stemR, 30, 32), plastic));
+stem.position.y = -15;
+
+// Hormone reservoir (core + translucent membrane, ~19 mm)
+const resCore = add(new THREE.Mesh(new THREE.CylinderGeometry(1.45, 1.45, 18.6, 40), core), 'res');
+resCore.position.y = -13.5;
+const resMem = add(new THREE.Mesh(new THREE.CapsuleGeometry(1.75, 18, 8, 40), membrane), 'res');
+resMem.position.y = -13.5;
+
+// Bottom eyelet
+const eye = add(new THREE.Mesh(new THREE.TorusGeometry(1.15, 0.45, 16, 40), plastic));
+eye.position.set(0, -31, 0); eye.rotation.y = Math.PI / 2;
+
+// Removal threads
+[[-0.35, 1.2], [0.35, -0.9]].forEach(([x, z], i) => {
+  const pts = [];
+  for (let k = 0; k <= 10; k++) {
+    const t = k / 10;
+    pts.push(new THREE.Vector3(x + Math.sin(t * 5 + i) * 0.9 * t, -31.5 - t * 30, z * t + Math.cos(t * 4 + i) * 0.6 * t));
+  }
+  add(new THREE.Mesh(new THREE.TubeGeometry(new THREE.CatmullRomCurve3(pts), 120, 0.22, 10), thread), 'threads');
+});
+
+iud.position.y = 15;
+const pivot = new THREE.Group(); pivot.add(iud); scene.add(pivot);
+pivot.rotation.set(0.12, -0.5, 0);
+
+// Soft gold shadow disc
+const glow = new THREE.Mesh(new THREE.CircleGeometry(30, 64), new THREE.MeshBasicMaterial({ color: 0xc8a15a, transparent: true, opacity: 0.06 }));
+glow.position.set(0, -10, -25); scene.add(glow);
+
+const controls = new OrbitControls(camera, renderer.domElement);
+controls.enableDamping = true; controls.dampingFactor = 0.08;
+controls.enablePan = false; controls.minDistance = 45; controls.maxDistance = 190;
+controls.target.set(0, -10, 0);
+controls.autoRotate = !matchMedia('(prefers-reduced-motion: reduce)').matches;
+controls.autoRotateSpeed = 1.2;
+
+const hint = document.getElementById('viewer-hint');
+let idle;
+controls.addEventListener('start', () => { controls.autoRotate = false; hint.style.opacity = 0; clearTimeout(idle); });
+controls.addEventListener('end', () => { idle = setTimeout(() => { controls.autoRotate = !matchMedia('(prefers-reduced-motion: reduce)').matches; }, 4000); });
+
+// Part highlighting
+const notes = {
+  arms: 'Гибкие плечики удерживают систему в полости матки.',
+  res: 'Резервуар с левоноргестрелом: каждый день выделяет очень малую дозу гормона.',
+  threads: 'Тонкие нити выходят в шейку матки — по ним врач удаляет систему.'
+};
+const noteEl = document.getElementById('part-note');
+let active = null;
+const allMeshes = []; iud.traverse(o => o.isMesh && allMeshes.push(o));
+allMeshes.forEach(m => { m.material = m.material.clone(); m.userData.base = m.material.opacity ?? 1; });
+function highlight(part) {
+  active = active === part ? null : part;
+  document.querySelectorAll('.parts button').forEach(b => b.classList.toggle('on', b.dataset.part === active));
+  allMeshes.forEach(m => {
+    const on = !active || parts[active].includes(m);
+    m.material.transparent = !on || m.material.transmission > 0;
+    m.material.opacity = on ? 1 : 0.15;
+    m.material.depthWrite = on;
+    m.material.needsUpdate = true;
+    if (m.material.emissive) m.material.emissive.set(active && parts[active].includes(m) ? 0x3a2a0c : 0x000000);
+  });
+  noteEl.textContent = active ? notes[active] : '';
+  noteEl.classList.toggle('show', !!active);
+}
+document.querySelectorAll('.parts button').forEach(b => b.addEventListener('click', () => highlight(b.dataset.part)));
+
+function resize() {
+  const w = box.clientWidth, h = box.clientHeight;
+  renderer.setSize(w, h, false); camera.aspect = w / h;
+  camera.position.sub(controls.target).setLength(w < 500 ? 155 : 132).add(controls.target);
+  camera.updateProjectionMatrix();
+}
+new ResizeObserver(resize).observe(box); resize();
+
+let visible = true;
+new IntersectionObserver(e => { visible = e[0].isIntersecting; }).observe(box);
+renderer.setAnimationLoop(() => { if (!visible) return; controls.update(); renderer.render(scene, camera); });
+</script>
+</body>
+</html>
